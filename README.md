@@ -17,14 +17,22 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 
 #### Create a new user repository from this template
 
-Press the "Use this template" button above to create a new repository to store your user configuration.
+https://docs.astronvim.com/configuration/manage_user_config/
 
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
+You can just clone this repository directly if you do not want to track your user configuration in GitHub.
 
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone https://github.com/hongyanca/astronvim_config
+# Or
+git clone git@github.com:hongyanca/astronvim_config.git ~/.config/nvim
+```
+
+#### Initialize AstroNvim
+
+```shell
+nvim --headless -c 'quitall'
 ```
 
 #### Start Neovim
@@ -32,3 +40,56 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```shell
 nvim
 ```
+
+
+
+## ⚙️ Configuration
+
+#### Default Colorscheme
+
+https://docs.astronvim.com/recipes/colorscheme/
+
+`lua/plugins/astroui.lua`
+
+```lua
+return {
+	opts = {
+    -- change colorscheme
+    colorscheme = "carbonfox",
+	}
+}
+```
+
+#### Partialy Replicate NvChad Statusline
+
+https://docs.astronvim.com/recipes/status/
+
+`lua/plugins/nvchad_statusline.lua`
+
+#### GitHub Copilot
+
+Uncomment lines below `-- GitHub Copilot` in `lua/community.lua`
+
+```lua
+  -- GitHub Copilot
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- { import = "astrocommunity.completion.copilot-lua" },
+  -- { -- further customize the options set by the community
+  --   "zbirenbaum/copilot.lua",
+  --   opts = {
+  --     suggestion = {
+  --       keymap = {
+  --         accept = "<C-l>",
+  --         accept_word = false,
+  --         accept_line = false,
+  --         next = "<C-.>",
+  --         prev = "<C-,>",
+  --         dismiss = "<C/>",
+  --       },
+  --     },
+  --   },
+  -- },
+```
+
+
+
