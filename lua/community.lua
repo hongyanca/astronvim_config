@@ -18,8 +18,8 @@ return {
   -- To add it to rustup, run: rustup component add rust-analyzer
   { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.pack.go" },
-  -- { import = "astrocommunity.pack.typescript" },
-  -- { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
@@ -34,28 +34,4 @@ return {
   -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
-  -- https://github.com/zbirenbaum/copilot.lua
-  -- GitHub Copilot Authencication :Copilot auth
-  -- GitHub Copilot
-  -- { import = "astrocommunity.completion.copilot-lua" },
-  -- { -- further customize the options set by the community
-  --   "zbirenbaum/copilot.lua",
-  --   cmd = "Copilot",
-  --   event = "InsertEnter",
-  --   config = function() require("copilot").setup {} end,
-  --   opts = {
-  --     suggestion = {
-  --       enabled = true,
-  --       auto_trigger = true,
-  --       keymap = {
-  --         accept = "<C-l>",
-  --         accept_word = false,
-  --         accept_line = false,
-  --         next = "<C-.>",
-  --         prev = "<C-,>",
-  --         dismiss = "<C/>",
-  --       },
-  --     },
-  --   },
-  -- },
 }

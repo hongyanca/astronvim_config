@@ -71,36 +71,13 @@ https://docs.astronvim.com/recipes/status/
 
 #### GitHub Copilot
 
-Uncomment lines below `-- GitHub Copilot` in `lua/community.lua`
+https://github.com/zbirenbaum/copilot.lua
 
-Run `:Copilot auth` in `nvim` to authenticate.
+Plugin file: `~/.config/nvim/lua/plugins/copilot.lua`
 
-```lua
-  -- https://github.com/zbirenbaum/copilot.lua
-  -- GitHub Copilot Authencication :Copilot auth
-  -- GitHub Copilot
-  -- { import = "astrocommunity.completion.copilot-lua" },
-  -- { -- further customize the options set by the community
-  --   "zbirenbaum/copilot.lua",
-  --   cmd = "Copilot",
-  --   event = "InsertEnter",
-  --   config = function() require("copilot").setup {} end,
-  --   opts = {
-  --     suggestion = {
-  --       enabled = true,
-  --       auto_trigger = true,
-  --       keymap = {
-  --         accept = "<C-l>",
-  --         accept_word = false,
-  --         accept_line = false,
-  --         next = "<C-.>",
-  --         prev = "<C-,>",
-  --         dismiss = "<C/>",
-  --       },
-  --     },
-  --   },
-  -- },
-```
+Once copilot is running, run `:Copilot auth` in `nvim` to start the authentication process.
+
+
 
 
 
