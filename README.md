@@ -21,6 +21,24 @@ https://docs.astronvim.com/configuration/manage_user_config/
 
 You can just clone this repository directly if you do not want to track your user configuration in GitHub.
 
+#### Backup old Neovim folders
+
+```
+mv ~/.local/share/nvim ~/.local/share/nvim.bak # backup old data folder
+mv ~/.local/state/nvim ~/.local/state/nvim.bak # backup old state folder
+mv ~/.cache/nvim ~/.cache/nvim.bak # backup old cache folder
+mv ~/.config/nvim ~/.config/nvim.bak # backup old config
+```
+
+#### Or Remove old Neovim config files
+
+```
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+rm -rf ~/.config/nvim
+```
+
 #### Clone the repository
 
 ```shell
