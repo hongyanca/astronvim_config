@@ -7,7 +7,7 @@ return {
   -- Add the community repository of plugin specifications
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.recipes.vscode" },
+  -- { import = "astrocommunity.recipes.vscode" },
   -- example of importing an entire language pack
   -- these packs can set up things such as Treesitter, Language Servers,
   -- additional language specific plugins, and more!
