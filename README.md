@@ -48,6 +48,24 @@ nvim
 
 ## ⚙️ Configuration
 
+#### Install Colorscheme
+
+`~/.config/nvim/lua/community.lua`
+
+```lua
+---@type LazySpec
+return {
+  -- snip
+  -- Importing themes
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.colorscheme.vscode-nvim" },
+  -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
+  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+}
+```
+
 #### Default Colorscheme
 
 https://docs.astronvim.com/recipes/colorscheme/
@@ -55,11 +73,15 @@ https://docs.astronvim.com/recipes/colorscheme/
 `~/.config/nvim/lua/plugins/astroui.lua`
 
 ```lua
+---@type LazySpec
 return {
+  "AstroNvim/astroui",
+  ---@type AstroUIOpts
   opts = {
     -- change colorscheme
     colorscheme = "carbonfox",
-	}
+    -- snip
+  },
 }
 ```
 
@@ -104,8 +126,5 @@ return {
 }
 ```
 
-
-
-Once copilot is running, run `:Copilot auth` in `nvim` to start the authentication process.
-
+Once copilot is installed and running, run `:Copilot auth` in `nvim` to start the authentication process.
 
