@@ -87,6 +87,8 @@ Run `:Copilot auth` in `nvim` to authenticate.
   --   config = function() require("copilot").setup {} end,
   --   opts = {
   --     suggestion = {
+  --       enabled = true,
+  --       auto_trigger = true,
   --       keymap = {
   --         accept = "<C-l>",
   --         accept_word = false,
