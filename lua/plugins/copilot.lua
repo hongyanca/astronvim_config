@@ -10,7 +10,7 @@ return {
         suggestion = {
           enabled = true,
           auto_trigger = true,
-          debounce = 75,
+          debounce = 150,
           keymap = {
             accept = "<C-l>",
             accept_word = false,
@@ -22,9 +22,5 @@ return {
         },
       }
     end,
-  },
-  {
-    "zbirenbaum/copilot-cmp",
-    config = function() require("copilot_cmp").setup() end,
   },
 }

@@ -27,7 +27,7 @@ rm -rf ~/.config/nvim
 #### Clone the repository
 
 ```shell
-git clone https://github.com/hongyanca/astronvim_config
+git clone https://github.com/hongyanca/astronvim_config ~/.config/nvim
 # Or
 git clone git@github.com:hongyanca/astronvim_config.git ~/.config/nvim
 ```
@@ -52,7 +52,7 @@ nvim
 
 https://docs.astronvim.com/recipes/colorscheme/
 
-`lua/plugins/astroui.lua`
+`~/.config/nvim/lua/plugins/astroui.lua`
 
 ```lua
 return {
@@ -67,17 +67,45 @@ return {
 
 https://docs.astronvim.com/recipes/status/
 
-`lua/plugins/nvchad_statusline.lua`
+`~/.config/nvim/lua/plugins/nvchad_statusline.lua`
 
 #### GitHub Copilot
 
 https://github.com/zbirenbaum/copilot.lua
 
-Plugin file: `~/.config/nvim/lua/plugins/copilot.lua`
+`~/.config/nvim/lua/plugins/copilot.lua`
+
+```lua
+---@type LazySpec
+return {
+  { -- https://github.com/zbirenbaum/copilot.lua
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup {
+        panel = { enabled = false },
+        suggestion = {
+          enabled = true,
+          auto_trigger = true,
+          debounce = 150,
+          keymap = {
+            accept = "<C-l>",
+            accept_word = false,
+            accept_line = false,
+            next = "<C-.>",
+            prev = "<C-,>",
+            dismiss = "<C-/>",
+          },
+        },
+      }
+    end,
+  },
+}
+```
+
+
 
 Once copilot is running, run `:Copilot auth` in `nvim` to start the authentication process.
-
-
-
 
 
