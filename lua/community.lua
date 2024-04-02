@@ -12,30 +12,48 @@ return {
   -- additional language specific plugins, and more!
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
+  -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/rust
+  -- This pack DOES not add rust_analyzer. This should be managed by rustup.
+  -- To add it to rustup, run: rustup component add rust-analyzer
   { import = "astrocommunity.pack.rust" },
+  -- { import = "astrocommunity.pack.go" },
+  -- { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.markdown" },
+  -- { import = "astrocommunity.pack.terraform" },
+  -- { import = "astrocommunity.pack.ansible" },
   -- Importing themes
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
-  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.vscode-nvim" },
-  { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
+  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   -- GitHub Copilot
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-  -- { import = "astrocommunity.completion.copilot-lua" },
-  -- { -- further customize the options set by the community
-  --   "zbirenbaum/copilot.lua",
-  --   opts = {
-  --     suggestion = {
-  --       keymap = {
-  --         accept = "<C-l>",
-  --         accept_word = false,
-  --         accept_line = false,
-  --         next = "<C-.>",
-  --         prev = "<C-,>",
-  --         dismiss = "<C/>",
-  --       },
-  --     },
-  --   },
-  -- },
+  { import = "astrocommunity.completion.copilot-lua" },
+  { -- further customize the options set by the community
+    -- https://github.com/zbirenbaum/copilot.lua
+    -- Authencication command:
+    -- :Copilot auth
+    -- "zbirenbaum/copilot.lua",
+    -- cmd = "Copilot",
+    -- event = "InsertEnter",
+    -- config = function() require("copilot").setup {} end,
+    -- opts = {
+    --   suggestion = {
+    --     keymap = {
+    --       accept = "<C-l>",
+    --       accept_word = false,
+    --       accept_line = false,
+    --       next = "<C-.>",
+    --       prev = "<C-,>",
+    --       dismiss = "<C/>",
+    --     },
+    --   },
+    -- },
+  },
 }
