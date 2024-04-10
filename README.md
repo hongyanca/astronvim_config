@@ -28,7 +28,11 @@ rm -rf ~/.config/nvim
 
 ```shell
 git clone https://github.com/hongyanca/astronvim_config ~/.config/nvim
-# Or
+```
+
+Or
+
+```
 git clone git@github.com:hongyanca/astronvim_config.git ~/.config/nvim
 ```
 
