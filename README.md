@@ -24,7 +24,7 @@ rm -rf ~/.cache/nvim
 rm -rf ~/.config/nvim
 ```
 
-#### Clone the repository
+#### Clone the repository for macOS and Linux
 
 ```shell
 git clone https://github.com/hongyanca/astronvim_config ~/.config/nvim
@@ -34,6 +34,12 @@ Or
 
 ```
 git clone git@github.com:hongyanca/astronvim_config.git ~/.config/nvim
+```
+
+#### Clone the repository for Windows
+
+```shell
+git clone https://github.com/hongyanca/astronvim_config "%userprofile%\AppData\Local\nvim"
 ```
 
 #### Initialize AstroNvim
