@@ -24,7 +24,7 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.markdown" },
+  -- { import = "astrocommunity.pack.markdown" },
   -- { import = "astrocommunity.pack.terraform" },
   -- { import = "astrocommunity.pack.ansible" },
   -- Importing themes
