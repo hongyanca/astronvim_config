@@ -34,4 +34,6 @@ return {
   -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
 }
